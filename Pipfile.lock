@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c8f3fa7add6348b5bcc883ecbf86b1a67117ee66162067cd15cf578672ee32a7"
+            "sha256": "589cb890cb765974970c7eced60e33cdf4da18ada7037a6daf30678cd341d114"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -584,6 +584,7 @@
                 "sha256:923f299cc5ad920c68f2bc0bc98b75b9f838b93b599941a6b63ddbc2476394c0",
                 "sha256:d7cc528d76e76342423ca640335bd3633420dc1366f258cb31d05e865ef5ca1f"
             ],
+            "markers": "os_name != 'nt'",
             "version": "==0.6.0"
         },
         "pyarrow": {
@@ -895,6 +896,7 @@
                 "sha256:d385c95361699e5cf7622485d9b9eae2d4864b21cd5a2374a9c381ffed701021",
                 "sha256:e22977e3ebe961f72362f6ddfb9197cc531c9737aaf5f607ef09740c849ecd05"
             ],
+            "index": "pypi",
             "version": "==4.31.1"
         },
         "traitlets": {
