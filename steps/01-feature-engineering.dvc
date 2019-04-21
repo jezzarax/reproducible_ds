@@ -1,0 +1,15 @@
+cmd: jupyter nbconvert --ExecutePreprocessor.timeout=600 --execute notebooks/01-feature-engineering.ipynb
+  ../reports/01-feature-engineering.html
+deps:
+- path: notebooks/01-feature-engineering.ipynb
+- path: data/00-raw-questions.feather
+outs:
+- cache: true
+  metric: false
+  path: data/01-feature-engineering-X.feather
+  persist: false
+- cache: true
+  metric: false
+  path: data/01-feature-engineering-y.feather
+  persist: false
+wdir: ..

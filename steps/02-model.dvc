@@ -1,0 +1,12 @@
+cmd: jupyter nbconvert --ExecutePreprocessor.timeout=600 --execute notebooks/02-build-model.ipynb
+  ../reports/02-build-model.ipynb
+deps:
+- path: notebooks/02-build-model.ipynb
+- path: data/01-feature-engineering-X.feather
+- path: data/01-feature-engineering-y.feather
+outs:
+- cache: true
+  metric: true
+  path: metrics/02-model.json
+  persist: false
+wdir: ..

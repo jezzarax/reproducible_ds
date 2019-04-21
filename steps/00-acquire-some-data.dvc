@@ -1,0 +1,10 @@
+cmd: jupyter nbconvert --ExecutePreprocessor.timeout=600 --execute notebooks/00-acquire-some-data.ipynb
+  ../reports/00-acquire-some-data.html
+deps:
+- path: notebooks/00-acquire-some-data.ipynb
+outs:
+- cache: true
+  metric: false
+  path: data/00-raw-questions.feather
+  persist: false
+wdir: ..
