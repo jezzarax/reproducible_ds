@@ -1,9 +1,12 @@
 cmd: jupyter nbconvert --ExecutePreprocessor.timeout=600 --execute notebooks/00-acquire-some-data.ipynb
   ../reports/00-acquire-some-data.html
 deps:
-- path: notebooks/00-acquire-some-data.ipynb
+- md5: 40648d5995d14f6442ff9ad38dea9902
+  path: notebooks/00-acquire-some-data.ipynb
+md5: 80ddeb1ee65f64e1abf87c6a866d1c35
 outs:
 - cache: true
+  md5: 3a8da33e541dc29b6e4bec12dff4f117
   metric: false
   path: data/00-raw-questions.feather
   persist: false

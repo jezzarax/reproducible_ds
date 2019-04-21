@@ -1,11 +1,16 @@
 cmd: jupyter nbconvert --ExecutePreprocessor.timeout=600 --execute notebooks/02-build-model.ipynb
   ../reports/02-build-model.ipynb
 deps:
-- path: notebooks/02-build-model.ipynb
-- path: data/01-feature-engineering-X.feather
-- path: data/01-feature-engineering-y.feather
+- md5: c9e1d13d7a1051bbec54f0316d383b39
+  path: notebooks/02-build-model.ipynb
+- md5: 00ec93235eb414bac6cfc93c86e9c210
+  path: data/01-feature-engineering-X.feather
+- md5: 8e3caafb3b6a85b709222ec2a000e8be
+  path: data/01-feature-engineering-y.feather
+md5: deec8f642a4cb1676c468b5900817778
 outs:
 - cache: true
+  md5: acd5f812c2509edb5cfaeea761fc8f56
   metric: true
   path: metrics/02-model.json
   persist: false
