@@ -1,14 +1,14 @@
 cmd: jupyter nbconvert --ExecutePreprocessor.timeout=600 --execute notebooks/01-feature-engineering.ipynb
   ../reports/01-feature-engineering.html
 deps:
-- md5: a408029df6b8dbedffadea279d20eec9
+- md5: 35f151577a914ba35277a2e8d5cfe5b3
   path: notebooks/01-feature-engineering.ipynb
 - md5: 3a8da33e541dc29b6e4bec12dff4f117
   path: data/00-raw-questions.feather
-md5: 97adce2afaa6d04c9ec7fdcdc51e39b5
+md5: 1115608353c40e4417b4906040b28528
 outs:
 - cache: true
-  md5: 00ec93235eb414bac6cfc93c86e9c210
+  md5: e7822e5b571a2d5a5349266a33ea56f5
   metric: false
   path: data/01-feature-engineering-X.feather
   persist: false
