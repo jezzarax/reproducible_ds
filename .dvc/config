@@ -1,0 +1,6 @@
+['remote "minio"']
+url = s3://dvc-remote/ds-repro/
+profile = lcl
+endpointurl = http://192.168.1.129:9000
+[core]
+remote = minio
